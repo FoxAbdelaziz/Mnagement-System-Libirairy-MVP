@@ -1,0 +1,99 @@
+
+Abdelaziz@Abdelaziz MINGW64 ~/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr
+$ git init
+Initialized empty Git repository in C:/Users/Abdelaziz/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr/.git/
+
+Abdelaziz@Abdelaziz MINGW64 ~/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr (master)
+$ git add .
+
+Abdelaziz@Abdelaziz MINGW64 ~/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr (master)
+$ git commit -m " first Upload Files"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Abdelaziz@Abdelaziz.(none)')
+
+Abdelaziz@Abdelaziz MINGW64 ~/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr (master)
+$ git commit -m "first Upload Files"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Abdelaziz@Abdelaziz.(none)')
+
+Abdelaziz@Abdelaziz MINGW64 ~/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr (master)
+$ ^C
+
+Abdelaziz@Abdelaziz MINGW64 ~/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr (master)
+$  git config --global user.email "your_address_email@domain.com"
+
+Abdelaziz@Abdelaziz MINGW64 ~/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr (master)
+$ git config --global user.email "zzahran1010@gmail.com"
+
+Abdelaziz@Abdelaziz MINGW64 ~/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr (master)
+$ git commit -m "first uploda files"
+[master (root-commit) ae949c9] first uploda files
+ 21 files changed, 470 insertions(+)
+ create mode 100644 .vs/System Library MVP Cours Mahmoud Bakr/v14/.suo
+ create mode 100644 System Library MVP Cours Mahmoud Bakr.sln
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/App.config
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/Form1.Designer.cs
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/Form1.cs
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/Program.cs
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/Properties/AssemblyInfo.cs
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/Properties/Resources.Designer.cs
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/Properties/Resources.resx
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/Properties/Settings.Designer.cs
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/Properties/Settings.settings
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/System Library MVP Cours Mahmoud Bakr.csproj
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/bin/Debug/System Library MVP Cours Mahmoud Bakr.exe.config
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/bin/Debug/System Library MVP Cours Mahmoud Bakr.vshost.exe
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/bin/Debug/System Library MVP Cours Mahmoud Bakr.vshost.exe.config
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/obj/Debug/System Library MVP Cours Mahmoud Bakr.csproj.FileListAbsolute.txt
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+ create mode 100644 System Library MVP Cours Mahmoud Bakr/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+
+Abdelaziz@Abdelaziz MINGW64 ~/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr (master)
+$ git remote add origin https://github.com/FoxAbdelaziz/Mnagement-System-Libirairy-MVP.git
+
+Abdelaziz@Abdelaziz MINGW64 ~/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr (master)
+$ git push -u origin master
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (28/28), 25.64 KiB | 2.33 MiB/s, done.
+Total 28 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/FoxAbdelaziz/Mnagement-System-Libirairy-MVP.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Abdelaziz@Abdelaziz MINGW64 ~/Documents/visual studio 2015/Projects/System Library MVP Cours Mahmoud Bakr (master)
+$
+
+
+===========================================================
+git add .
+
+git commit -m "Updaate"
+
+git push -u origin master

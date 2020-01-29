@@ -16,7 +16,7 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Views.Forms.FormMain());
         }
     }
 }
