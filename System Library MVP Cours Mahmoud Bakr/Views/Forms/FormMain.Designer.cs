@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.MenuStripMain = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuLogin = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,6 +84,7 @@
             this.toolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblDateEnter = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBoxMain = new System.Windows.Forms.PictureBox();
+            this.timerMain = new System.Windows.Forms.Timer(this.components);
             this.MenuStripMain.SuspendLayout();
             this.toolStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
@@ -188,6 +190,7 @@
             this.ToolStripMenuCategory.Name = "ToolStripMenuCategory";
             this.ToolStripMenuCategory.Size = new System.Drawing.Size(164, 34);
             this.ToolStripMenuCategory.Text = "تصنيف الكتب";
+            this.ToolStripMenuCategory.Click += new System.EventHandler(this.ToolStripMenuCategory_Click);
             // 
             // ToolStripMenuAuthors
             // 
@@ -202,6 +205,7 @@
             this.ToolStripMenuPlaces.Name = "ToolStripMenuPlaces";
             this.ToolStripMenuPlaces.Size = new System.Drawing.Size(164, 34);
             this.ToolStripMenuPlaces.Text = "أماكن الكتب";
+            this.ToolStripMenuPlaces.Click += new System.EventHandler(this.ToolStripMenuPlaces_Click);
             // 
             // ToolStripMenuDarNashr
             // 
@@ -227,7 +231,7 @@
             // الكتبToolStripMenuItem
             // 
             this.الكتبToolStripMenuItem.Name = "الكتبToolStripMenuItem";
-            this.الكتبToolStripMenuItem.Size = new System.Drawing.Size(152, 34);
+            this.الكتبToolStripMenuItem.Size = new System.Drawing.Size(150, 34);
             this.الكتبToolStripMenuItem.Text = "ادارة الكتب";
             // 
             // MenuBorrowers
@@ -288,6 +292,7 @@
             this.toolStripCategory.Size = new System.Drawing.Size(95, 95);
             this.toolStripCategory.Text = "تصنيف الكتب";
             this.toolStripCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripCategory.Click += new System.EventHandler(this.toolStripCategory_Click);
             // 
             // toolStripSeparator12
             // 
@@ -320,6 +325,7 @@
             this.toolStripPlaces.Size = new System.Drawing.Size(95, 95);
             this.toolStripPlaces.Text = "أماكن الكتب";
             this.toolStripPlaces.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripPlaces.Click += new System.EventHandler(this.toolStripPlaces_Click);
             // 
             // toolStripSeparator3
             // 
@@ -578,6 +584,11 @@
             this.pictureBoxMain.TabIndex = 11;
             this.pictureBoxMain.TabStop = false;
             // 
+            // timerMain
+            // 
+            this.timerMain.Enabled = true;
+            this.timerMain.Tick += new System.EventHandler(this.timerMain_Tick);
+            // 
             // FormMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -664,5 +675,6 @@
         private System.Windows.Forms.ToolStripMenuItem بياناتالمستعرينToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem استعارهكتابToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem تقاريرالاستعاراتToolStripMenuItem;
+        private System.Windows.Forms.Timer timerMain;
     }
 }

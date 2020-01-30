@@ -63,6 +63,46 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Actions_go_first_view_icon {
+            get {
+                object obj = ResourceManager.GetObject("Actions-go-first-view-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Actions_go_last_view_icon {
+            get {
+                object obj = ResourceManager.GetObject("Actions-go-last-view-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Actions_go_next_view_icon {
+            get {
+                object obj = ResourceManager.GetObject("Actions-go-next-view-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Actions_go_previous_view_icon {
+            get {
+                object obj = ResourceManager.GetObject("Actions-go-previous-view-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Authors {
             get {
                 object obj = ResourceManager.GetObject("Authors", resourceCulture);

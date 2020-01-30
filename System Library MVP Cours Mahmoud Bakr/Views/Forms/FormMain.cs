@@ -16,5 +16,35 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
         {
             InitializeComponent();
         }
+
+        private void ToolStripMenuCategory_Click(object sender, EventArgs e)
+        {
+            new FormCategory().ShowDialog();
+        }
+
+        private void toolStripCategory_Click(object sender, EventArgs e)
+        {
+            new FormCategory().ShowDialog();
+
+        }
+
+        private void toolStripPlaces_Click(object sender, EventArgs e)
+        {
+            new FormPlaces().ShowDialog();
+
+        }
+
+        private void ToolStripMenuPlaces_Click(object sender, EventArgs e)
+        {
+            new FormPlaces().ShowDialog();
+
+        }
+
+        private void timerMain_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            lblDateDay.Text = DateTime.Now.ToString("yyyy/MM/dd");
+            lblDay.Text = new System.Globalization.CultureInfo("AR-EG").DateTimeFormat.GetDayName(DateTime.Today.DayOfWeek);
+        }
     }
 }
