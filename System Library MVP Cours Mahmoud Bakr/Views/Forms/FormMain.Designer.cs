@@ -61,6 +61,7 @@
             this.toolStripDarNashr = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripCountry = new System.Windows.Forms.ToolStripButton();
+            this.toolStripExit = new System.Windows.Forms.ToolStripButton();
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel9 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblUser = new System.Windows.Forms.ToolStripStatusLabel();
@@ -148,17 +149,17 @@
             // 
             // MenuBackUpDate
             // 
-            this.MenuBackUpDate.Enabled = false;
             this.MenuBackUpDate.Name = "MenuBackUpDate";
             this.MenuBackUpDate.Size = new System.Drawing.Size(318, 34);
             this.MenuBackUpDate.Text = "عمل نسخة أحتياطية";
+            this.MenuBackUpDate.Click += new System.EventHandler(this.MenuBackUpDate_Click);
             // 
             // MenuRestorData
             // 
-            this.MenuRestorData.Enabled = false;
             this.MenuRestorData.Name = "MenuRestorData";
             this.MenuRestorData.Size = new System.Drawing.Size(318, 34);
             this.MenuRestorData.Text = "أسترجاع نسخة محفوظة";
+            this.MenuRestorData.Click += new System.EventHandler(this.MenuRestorData_Click);
             // 
             // toolStripSeparator9
             // 
@@ -171,6 +172,7 @@
             this.MenuSettingConnect.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.MenuSettingConnect.Size = new System.Drawing.Size(318, 34);
             this.MenuSettingConnect.Text = "اعداد الاتصال بقاعدة البيانات";
+            this.MenuSettingConnect.Click += new System.EventHandler(this.MenuSettingConnect_Click);
             // 
             // MenuBiscData
             // 
@@ -198,6 +200,7 @@
             this.ToolStripMenuAuthors.Name = "ToolStripMenuAuthors";
             this.ToolStripMenuAuthors.Size = new System.Drawing.Size(164, 34);
             this.ToolStripMenuAuthors.Text = "المؤلفين";
+            this.ToolStripMenuAuthors.Click += new System.EventHandler(this.ToolStripMenuAuthors_Click);
             // 
             // ToolStripMenuPlaces
             // 
@@ -212,6 +215,7 @@
             this.ToolStripMenuDarNashr.Name = "ToolStripMenuDarNashr";
             this.ToolStripMenuDarNashr.Size = new System.Drawing.Size(164, 34);
             this.ToolStripMenuDarNashr.Text = "دار النشر";
+            this.ToolStripMenuDarNashr.Click += new System.EventHandler(this.ToolStripMenuDarNashr_Click);
             // 
             // ToolStripMenuCountry
             // 
@@ -219,6 +223,7 @@
             this.ToolStripMenuCountry.Name = "ToolStripMenuCountry";
             this.ToolStripMenuCountry.Size = new System.Drawing.Size(164, 34);
             this.ToolStripMenuCountry.Text = "الدول";
+            this.ToolStripMenuCountry.Click += new System.EventHandler(this.ToolStripMenuCountry_Click);
             // 
             // MenuBooks
             // 
@@ -275,7 +280,8 @@
             this.toolStripSeparator3,
             this.toolStripDarNashr,
             this.toolStripSeparator1,
-            this.toolStripCountry});
+            this.toolStripCountry,
+            this.toolStripExit});
             this.toolStripMain.Location = new System.Drawing.Point(0, 37);
             this.toolStripMain.Name = "toolStripMain";
             this.toolStripMain.Size = new System.Drawing.Size(1360, 95);
@@ -309,6 +315,7 @@
             this.toolStripAuthors.Size = new System.Drawing.Size(95, 95);
             this.toolStripAuthors.Text = "المؤلفين";
             this.toolStripAuthors.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripAuthors.Click += new System.EventHandler(this.toolStripAuthors_Click);
             // 
             // toolStripSeparator2
             // 
@@ -342,6 +349,7 @@
             this.toolStripDarNashr.Size = new System.Drawing.Size(95, 95);
             this.toolStripDarNashr.Text = "دار النشر";
             this.toolStripDarNashr.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripDarNashr.Click += new System.EventHandler(this.toolStripDarNashr_Click);
             // 
             // toolStripSeparator1
             // 
@@ -358,6 +366,19 @@
             this.toolStripCountry.Size = new System.Drawing.Size(95, 95);
             this.toolStripCountry.Text = "الدول";
             this.toolStripCountry.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripCountry.Click += new System.EventHandler(this.toolStripCountry_Click);
+            // 
+            // toolStripExit
+            // 
+            this.toolStripExit.AutoSize = false;
+            this.toolStripExit.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Exit;
+            this.toolStripExit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripExit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripExit.Name = "toolStripExit";
+            this.toolStripExit.Size = new System.Drawing.Size(95, 95);
+            this.toolStripExit.Text = "خروج";
+            this.toolStripExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripExit.Click += new System.EventHandler(this.toolStripExit_Click);
             // 
             // statusStripMain
             // 
@@ -662,7 +683,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         public System.Windows.Forms.ToolStripButton toolStripPlaces;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        public System.Windows.Forms.ToolStripButton toolStripCountry;
+        public System.Windows.Forms.ToolStripButton toolStripExit;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         public System.Windows.Forms.ToolStripButton toolStripDarNashr;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuAuthors;
@@ -676,5 +697,6 @@
         private System.Windows.Forms.ToolStripMenuItem استعارهكتابToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem تقاريرالاستعاراتToolStripMenuItem;
         private System.Windows.Forms.Timer timerMain;
+        public System.Windows.Forms.ToolStripButton toolStripCountry;
     }
 }

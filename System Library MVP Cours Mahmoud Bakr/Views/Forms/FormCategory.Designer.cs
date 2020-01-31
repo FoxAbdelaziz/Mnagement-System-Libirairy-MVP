@@ -36,20 +36,20 @@
             this.ptnUpdate = new System.Windows.Forms.Button();
             this.ptnAdd = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.ptnLast = new System.Windows.Forms.PictureBox();
-            this.ptnNext = new System.Windows.Forms.PictureBox();
-            this.ptnPrevious = new System.Windows.Forms.PictureBox();
             this.ptnFirst = new System.Windows.Forms.PictureBox();
-            this.ptnNew = new System.Windows.Forms.Button();
+            this.ptnPrevious = new System.Windows.Forms.PictureBox();
+            this.ptnNext = new System.Windows.Forms.PictureBox();
+            this.ptnLast = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ptnDeleteAll = new System.Windows.Forms.Button();
+            this.ptnNew = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptnLast)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptnNext)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptnPrevious)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptnFirst)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptnPrevious)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptnNext)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptnLast)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,10 +74,13 @@
             // 
             // txtCatID
             // 
+            this.txtCatID.Font = new System.Drawing.Font("Traditional Arabic", 18F, System.Drawing.FontStyle.Bold);
+            this.txtCatID.ForeColor = System.Drawing.Color.Red;
             this.txtCatID.Location = new System.Drawing.Point(107, 29);
             this.txtCatID.Name = "txtCatID";
-            this.txtCatID.Size = new System.Drawing.Size(125, 37);
+            this.txtCatID.Size = new System.Drawing.Size(125, 44);
             this.txtCatID.TabIndex = 2;
+            this.txtCatID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ptnCatName
             // 
@@ -128,6 +131,50 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "أسهم التنقل";
             // 
+            // ptnFirst
+            // 
+            this.ptnFirst.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ptnFirst.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Actions_go_first_view_icon;
+            this.ptnFirst.Location = new System.Drawing.Point(98, 22);
+            this.ptnFirst.Name = "ptnFirst";
+            this.ptnFirst.Size = new System.Drawing.Size(55, 52);
+            this.ptnFirst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptnFirst.TabIndex = 3;
+            this.ptnFirst.TabStop = false;
+            // 
+            // ptnPrevious
+            // 
+            this.ptnPrevious.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ptnPrevious.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Actions_go_previous_view_icon;
+            this.ptnPrevious.Location = new System.Drawing.Point(179, 22);
+            this.ptnPrevious.Name = "ptnPrevious";
+            this.ptnPrevious.Size = new System.Drawing.Size(55, 52);
+            this.ptnPrevious.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptnPrevious.TabIndex = 2;
+            this.ptnPrevious.TabStop = false;
+            // 
+            // ptnNext
+            // 
+            this.ptnNext.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ptnNext.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Actions_go_next_view_icon;
+            this.ptnNext.Location = new System.Drawing.Point(375, 22);
+            this.ptnNext.Name = "ptnNext";
+            this.ptnNext.Size = new System.Drawing.Size(55, 52);
+            this.ptnNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptnNext.TabIndex = 1;
+            this.ptnNext.TabStop = false;
+            // 
+            // ptnLast
+            // 
+            this.ptnLast.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ptnLast.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Actions_go_last_view_icon;
+            this.ptnLast.Location = new System.Drawing.Point(458, 22);
+            this.ptnLast.Name = "ptnLast";
+            this.ptnLast.Size = new System.Drawing.Size(55, 52);
+            this.ptnLast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptnLast.TabIndex = 0;
+            this.ptnLast.TabStop = false;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.ptnDeleteAll);
@@ -142,49 +189,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "العمليات";
             // 
-            // ptnLast
+            // ptnDeleteAll
             // 
-            this.ptnLast.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ptnLast.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Actions_go_last_view_icon;
-            this.ptnLast.Location = new System.Drawing.Point(458, 22);
-            this.ptnLast.Name = "ptnLast";
-            this.ptnLast.Size = new System.Drawing.Size(55, 52);
-            this.ptnLast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptnLast.TabIndex = 0;
-            this.ptnLast.TabStop = false;
-            // 
-            // ptnNext
-            // 
-            this.ptnNext.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ptnNext.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Actions_go_next_view_icon;
-            this.ptnNext.Location = new System.Drawing.Point(375, 22);
-            this.ptnNext.Name = "ptnNext";
-            this.ptnNext.Size = new System.Drawing.Size(55, 52);
-            this.ptnNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptnNext.TabIndex = 1;
-            this.ptnNext.TabStop = false;
-            // 
-            // ptnPrevious
-            // 
-            this.ptnPrevious.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ptnPrevious.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Actions_go_previous_view_icon;
-            this.ptnPrevious.Location = new System.Drawing.Point(179, 22);
-            this.ptnPrevious.Name = "ptnPrevious";
-            this.ptnPrevious.Size = new System.Drawing.Size(55, 52);
-            this.ptnPrevious.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptnPrevious.TabIndex = 2;
-            this.ptnPrevious.TabStop = false;
-            // 
-            // ptnFirst
-            // 
-            this.ptnFirst.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ptnFirst.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Actions_go_first_view_icon;
-            this.ptnFirst.Location = new System.Drawing.Point(98, 22);
-            this.ptnFirst.Name = "ptnFirst";
-            this.ptnFirst.Size = new System.Drawing.Size(55, 52);
-            this.ptnFirst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptnFirst.TabIndex = 3;
-            this.ptnFirst.TabStop = false;
+            this.ptnDeleteAll.Font = new System.Drawing.Font("Traditional Arabic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ptnDeleteAll.Location = new System.Drawing.Point(30, 27);
+            this.ptnDeleteAll.Name = "ptnDeleteAll";
+            this.ptnDeleteAll.Size = new System.Drawing.Size(107, 41);
+            this.ptnDeleteAll.TabIndex = 8;
+            this.ptnDeleteAll.Text = "مسح الكل";
+            this.ptnDeleteAll.UseVisualStyleBackColor = true;
             // 
             // ptnNew
             // 
@@ -196,23 +209,22 @@
             this.ptnNew.Text = "جديد";
             this.ptnNew.UseVisualStyleBackColor = true;
             // 
-            // ptnDeleteAll
-            // 
-            this.ptnDeleteAll.Font = new System.Drawing.Font("Traditional Arabic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ptnDeleteAll.Location = new System.Drawing.Point(30, 27);
-            this.ptnDeleteAll.Name = "ptnDeleteAll";
-            this.ptnDeleteAll.Size = new System.Drawing.Size(107, 41);
-            this.ptnDeleteAll.TabIndex = 8;
-            this.ptnDeleteAll.Text = "مسح الكل";
-            this.ptnDeleteAll.UseVisualStyleBackColor = true;
-            // 
             // dgv
             // 
+            this.dgv.AllowUserToAddRows = false;
+            this.dgv.AllowUserToDeleteRows = false;
+            this.dgv.AllowUserToResizeColumns = false;
+            this.dgv.AllowUserToResizeRows = false;
+            this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv.BackgroundColor = System.Drawing.Color.White;
+            this.dgv.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Location = new System.Drawing.Point(12, 258);
+            this.dgv.Location = new System.Drawing.Point(12, 263);
             this.dgv.Name = "dgv";
+            this.dgv.ReadOnly = true;
+            this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(672, 231);
-            this.dgv.TabIndex = 9;
+            this.dgv.TabIndex = 25;
             // 
             // FormCategory
             // 
@@ -236,11 +248,11 @@
             this.Text = "إدارة تصنيفات الكتب";
             this.Load += new System.EventHandler(this.FormCategory_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptnLast)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptnNext)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptnPrevious)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptnFirst)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptnPrevious)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptnNext)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptnLast)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

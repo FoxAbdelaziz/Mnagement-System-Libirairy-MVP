@@ -1,11 +1,18 @@
-c:\users\abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\bin\Debug\System Library MVP Cours Mahmoud Bakr.exe.config
-c:\users\abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\bin\Debug\System Library MVP Cours Mahmoud Bakr.exe
-c:\users\abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\bin\Debug\System Library MVP Cours Mahmoud Bakr.pdb
-c:\users\abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.resources
-c:\users\abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms.FormMain.resources
-c:\users\abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.csproj.GenerateResource.Cache
-c:\users\abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.exe
-c:\users\abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.pdb
-C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.csprojResolveAssemblyReference.cache
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\bin\Debug\System Library MVP Cours Mahmoud Bakr.exe.config
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\bin\Debug\System Library MVP Cours Mahmoud Bakr.exe
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\bin\Debug\System Library MVP Cours Mahmoud Bakr.pdb
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.resources
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms.FormAuthors.resources
 C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms.FormCategory.resources
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms.FormCountry.resources
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms.FormDar_Nashr.resources
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms.FormMain.resources
 C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms.FormPlaces.resources
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.csproj.GenerateResource.Cache
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.exe
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.pdb
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.csprojResolveAssemblyReference.cache
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms.FormBackUpData.resources
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms.FormSettingConnect.resources
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms.FormRestorData.resources
+C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms.FormSystemControl.resources

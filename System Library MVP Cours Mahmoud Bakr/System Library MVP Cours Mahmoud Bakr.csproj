@@ -46,13 +46,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\Services\ClassDB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Forms\FormAuthors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\FormAuthors.Designer.cs">
+      <DependentUpon>FormAuthors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\FormBackUpData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\FormBackUpData.designer.cs">
+      <DependentUpon>FormBackUpData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Forms\FormCategory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Forms\FormCategory.Designer.cs">
       <DependentUpon>FormCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\FormCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\FormCountry.Designer.cs">
+      <DependentUpon>FormCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\FormDar_Nashr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\FormDar_Nashr.Designer.cs">
+      <DependentUpon>FormDar_Nashr.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Forms\FormMain.cs">
       <SubType>Form</SubType>
@@ -66,6 +91,24 @@
     <Compile Include="Views\Forms\FormPlaces.Designer.cs">
       <DependentUpon>FormPlaces.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Forms\FormRestorData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\FormRestorData.designer.cs">
+      <DependentUpon>FormRestorData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\FormSettingConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\FormSettingConnect.Designer.cs">
+      <DependentUpon>FormSettingConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\FormSystemControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\FormSystemControl.designer.cs">
+      <DependentUpon>FormSystemControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -76,14 +119,35 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\Forms\FormAuthors.resx">
+      <DependentUpon>FormAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\FormBackUpData.resx">
+      <DependentUpon>FormBackUpData.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\FormCategory.resx">
       <DependentUpon>FormCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\FormCountry.resx">
+      <DependentUpon>FormCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\FormDar_Nashr.resx">
+      <DependentUpon>FormDar_Nashr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\FormPlaces.resx">
       <DependentUpon>FormPlaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\FormRestorData.resx">
+      <DependentUpon>FormRestorData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\FormSettingConnect.resx">
+      <DependentUpon>FormSettingConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\FormSystemControl.resx">
+      <DependentUpon>FormSystemControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,7 +163,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Logic\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +191,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Actions-go-previous-view-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,7 +1,24 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="System_Library_MVP_Cours_Mahmoud_Bakr.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Database" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DBLibraryMVPCours</Value>
+    </Setting>
+    <Setting Name="Mode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sql Server  Authentication</Value>
+    </Setting>
+    <Setting Name="DBLibraryMVPCoursConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=Abdelaziz\SQLEXPRESS;Initial Catalog=DBLibraryMVPCours;Persist Security Info=True;User ID=AbdelazizServer;Password=AbdelazizServer</Value>
+    </Setting>
+    <Setting Name="ServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Abdelaziz\SQLEXPRESS</Value>
+    </Setting>
+    <Setting Name="Username" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AbdelazizServer</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AbdelazizServer</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

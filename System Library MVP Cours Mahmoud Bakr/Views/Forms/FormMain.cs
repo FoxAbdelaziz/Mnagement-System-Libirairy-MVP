@@ -46,5 +46,63 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             lblDateDay.Text = DateTime.Now.ToString("yyyy/MM/dd");
             lblDay.Text = new System.Globalization.CultureInfo("AR-EG").DateTimeFormat.GetDayName(DateTime.Today.DayOfWeek);
         }
+
+        private void toolStripAuthors_Click(object sender, EventArgs e)
+        {
+            new FormAuthors().ShowDialog();
+
+        }
+
+        private void ToolStripMenuAuthors_Click(object sender, EventArgs e)
+        {
+            new FormAuthors().ShowDialog();
+
+        }
+
+        private void toolStripDarNashr_Click(object sender, EventArgs e)
+        {
+            new FormDar_Nashr().ShowDialog();
+
+        }
+
+        private void ToolStripMenuDarNashr_Click(object sender, EventArgs e)
+        {
+            new FormDar_Nashr().ShowDialog();
+
+        }
+
+        private void ToolStripMenuCountry_Click(object sender, EventArgs e)
+        {
+            new FormCountry().ShowDialog();
+
+        }
+
+        private void MenuSettingConnect_Click(object sender, EventArgs e)
+        {
+            new FormSettingConnect().ShowDialog();
+        }
+
+        private void toolStripExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void toolStripCountry_Click(object sender, EventArgs e)
+        {
+            new FormCountry().ShowDialog();
+
+        }
+
+        private void MenuBackUpDate_Click(object sender, EventArgs e)
+        {
+            new FormBackUpData().ShowDialog();
+
+        }
+
+        private void MenuRestorData_Click(object sender, EventArgs e)
+        {
+            new FormRestorData().ShowDialog();
+
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
 {
-    partial class FormPlaces
+    partial class FormCountry
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.ptnDelete = new System.Windows.Forms.Button();
-            this.ptnPlaceName = new System.Windows.Forms.TextBox();
+            this.txtCountry = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPlaceID = new System.Windows.Forms.TextBox();
+            this.txtCountryID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ptnUpdate = new System.Windows.Forms.Button();
             this.ptnAdd = new System.Windows.Forms.Button();
@@ -44,6 +44,8 @@
             this.ptnDeleteAll = new System.Windows.Forms.Button();
             this.ptnNew = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
+            this.txtCountryCode = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptnFirst)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptnPrevious)).BeginInit();
@@ -63,40 +65,40 @@
             this.ptnDelete.Text = "مسح";
             this.ptnDelete.UseVisualStyleBackColor = true;
             // 
-            // ptnPlaceName
+            // txtCountry
             // 
-            this.ptnPlaceName.Location = new System.Drawing.Point(347, 22);
-            this.ptnPlaceName.Name = "ptnPlaceName";
-            this.ptnPlaceName.Size = new System.Drawing.Size(289, 37);
-            this.ptnPlaceName.TabIndex = 13;
+            this.txtCountry.Location = new System.Drawing.Point(489, 23);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(177, 37);
+            this.txtCountry.TabIndex = 13;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(257, 25);
+            this.label2.Location = new System.Drawing.Point(438, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 29);
+            this.label2.Size = new System.Drawing.Size(45, 29);
             this.label2.TabIndex = 12;
-            this.label2.Text = "مكان الكتاب";
+            this.label2.Text = "الدولة";
             // 
-            // txtPlaceID
+            // txtCountryID
             // 
-            this.txtPlaceID.Font = new System.Drawing.Font("Traditional Arabic", 18F, System.Drawing.FontStyle.Bold);
-            this.txtPlaceID.ForeColor = System.Drawing.Color.Red;
-            this.txtPlaceID.Location = new System.Drawing.Point(109, 22);
-            this.txtPlaceID.Name = "txtPlaceID";
-            this.txtPlaceID.Size = new System.Drawing.Size(125, 44);
-            this.txtPlaceID.TabIndex = 11;
-            this.txtPlaceID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCountryID.Font = new System.Drawing.Font("Traditional Arabic", 18F, System.Drawing.FontStyle.Bold);
+            this.txtCountryID.ForeColor = System.Drawing.Color.Red;
+            this.txtCountryID.Location = new System.Drawing.Point(93, 23);
+            this.txtCountryID.Name = "txtCountryID";
+            this.txtCountryID.Size = new System.Drawing.Size(125, 44);
+            this.txtCountryID.TabIndex = 11;
+            this.txtCountryID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 25);
+            this.label1.Location = new System.Drawing.Point(21, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 29);
+            this.label1.Size = new System.Drawing.Size(66, 29);
             this.label1.TabIndex = 10;
-            this.label1.Text = "رقم المكان";
+            this.label1.Text = "رقم الدولة";
             // 
             // ptnUpdate
             // 
@@ -124,7 +126,7 @@
             this.groupBox1.Controls.Add(this.ptnPrevious);
             this.groupBox1.Controls.Add(this.ptnNext);
             this.groupBox1.Controls.Add(this.ptnLast);
-            this.groupBox1.Location = new System.Drawing.Point(46, 79);
+            this.groupBox1.Location = new System.Drawing.Point(44, 77);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(622, 80);
             this.groupBox1.TabIndex = 14;
@@ -182,7 +184,7 @@
             this.groupBox2.Controls.Add(this.ptnDelete);
             this.groupBox2.Controls.Add(this.ptnUpdate);
             this.groupBox2.Controls.Add(this.ptnAdd);
-            this.groupBox2.Location = new System.Drawing.Point(46, 165);
+            this.groupBox2.Location = new System.Drawing.Point(44, 163);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(622, 80);
             this.groupBox2.TabIndex = 15;
@@ -219,21 +221,39 @@
             this.dgv.BackgroundColor = System.Drawing.Color.White;
             this.dgv.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Location = new System.Drawing.Point(12, 257);
+            this.dgv.Location = new System.Drawing.Point(12, 259);
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(672, 231);
             this.dgv.TabIndex = 25;
             // 
-            // FormPlaces
+            // txtCountryCode
+            // 
+            this.txtCountryCode.Location = new System.Drawing.Point(303, 23);
+            this.txtCountryCode.Name = "txtCountryCode";
+            this.txtCountryCode.Size = new System.Drawing.Size(125, 37);
+            this.txtCountryCode.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(231, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 29);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "كود الدولة";
+            // 
+            // FormCountry
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(700, 505);
-            this.Controls.Add(this.ptnPlaceName);
+            this.ClientSize = new System.Drawing.Size(696, 501);
+            this.Controls.Add(this.txtCountryCode);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtCountry);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPlaceID);
+            this.Controls.Add(this.txtCountryID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -241,12 +261,12 @@
             this.Font = new System.Drawing.Font("Traditional Arabic", 14.25F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
-            this.Name = "FormPlaces";
+            this.Name = "FormCountry";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "أماكن الكتب";
-            this.Load += new System.EventHandler(this.FormPlaces_Load);
+            this.Text = "شاشة الدول";
+            this.Load += new System.EventHandler(this.FormCountry_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptnFirst)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptnPrevious)).EndInit();
@@ -262,9 +282,9 @@
         #endregion
 
         private System.Windows.Forms.Button ptnDelete;
-        private System.Windows.Forms.TextBox ptnPlaceName;
+        private System.Windows.Forms.TextBox txtCountry;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPlaceID;
+        private System.Windows.Forms.TextBox txtCountryID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ptnUpdate;
         private System.Windows.Forms.Button ptnAdd;
@@ -277,5 +297,7 @@
         private System.Windows.Forms.Button ptnDeleteAll;
         private System.Windows.Forms.Button ptnNew;
         private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.TextBox txtCountryCode;
+        private System.Windows.Forms.Label label3;
     }
 }
