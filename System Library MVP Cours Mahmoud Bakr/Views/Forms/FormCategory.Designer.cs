@@ -31,7 +31,7 @@
             this.ptnDelete = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCatID = new System.Windows.Forms.TextBox();
-            this.ptnCatName = new System.Windows.Forms.TextBox();
+            this.txtCatName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ptnUpdate = new System.Windows.Forms.Button();
             this.ptnAdd = new System.Windows.Forms.Button();
@@ -62,6 +62,7 @@
             this.ptnDelete.TabIndex = 0;
             this.ptnDelete.Text = "مسح";
             this.ptnDelete.UseVisualStyleBackColor = true;
+            this.ptnDelete.Click += new System.EventHandler(this.ptnDelete_Click);
             // 
             // label1
             // 
@@ -82,12 +83,12 @@
             this.txtCatID.TabIndex = 2;
             this.txtCatID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // ptnCatName
+            // txtCatName
             // 
-            this.ptnCatName.Location = new System.Drawing.Point(345, 29);
-            this.ptnCatName.Name = "ptnCatName";
-            this.ptnCatName.Size = new System.Drawing.Size(289, 37);
-            this.ptnCatName.TabIndex = 4;
+            this.txtCatName.Location = new System.Drawing.Point(345, 29);
+            this.txtCatName.Name = "txtCatName";
+            this.txtCatName.Size = new System.Drawing.Size(289, 37);
+            this.txtCatName.TabIndex = 4;
             // 
             // label2
             // 
@@ -107,6 +108,7 @@
             this.ptnUpdate.TabIndex = 5;
             this.ptnUpdate.Text = "حفظ";
             this.ptnUpdate.UseVisualStyleBackColor = true;
+            this.ptnUpdate.Click += new System.EventHandler(this.ptnUpdate_Click);
             // 
             // ptnAdd
             // 
@@ -117,6 +119,7 @@
             this.ptnAdd.TabIndex = 6;
             this.ptnAdd.Text = "اضافة";
             this.ptnAdd.UseVisualStyleBackColor = true;
+            this.ptnAdd.Click += new System.EventHandler(this.ptnAdd_Click);
             // 
             // groupBox1
             // 
@@ -198,6 +201,7 @@
             this.ptnDeleteAll.TabIndex = 8;
             this.ptnDeleteAll.Text = "مسح الكل";
             this.ptnDeleteAll.UseVisualStyleBackColor = true;
+            this.ptnDeleteAll.Click += new System.EventHandler(this.ptnDeleteAll_Click);
             // 
             // ptnNew
             // 
@@ -208,6 +212,7 @@
             this.ptnNew.TabIndex = 7;
             this.ptnNew.Text = "جديد";
             this.ptnNew.UseVisualStyleBackColor = true;
+            this.ptnNew.Click += new System.EventHandler(this.ptnNew_Click);
             // 
             // dgv
             // 
@@ -216,8 +221,6 @@
             this.dgv.AllowUserToResizeColumns = false;
             this.dgv.AllowUserToResizeRows = false;
             this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv.BackgroundColor = System.Drawing.Color.White;
-            this.dgv.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(12, 263);
             this.dgv.Name = "dgv";
@@ -225,6 +228,7 @@
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(672, 231);
             this.dgv.TabIndex = 25;
+            this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             // 
             // FormCategory
             // 
@@ -234,7 +238,7 @@
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.ptnCatName);
+            this.Controls.Add(this.txtCatName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCatID);
             this.Controls.Add(this.label1);
@@ -264,7 +268,7 @@
         private System.Windows.Forms.Button ptnDelete;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCatID;
-        private System.Windows.Forms.TextBox ptnCatName;
+        private System.Windows.Forms.TextBox txtCatName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button ptnUpdate;
         private System.Windows.Forms.Button ptnAdd;

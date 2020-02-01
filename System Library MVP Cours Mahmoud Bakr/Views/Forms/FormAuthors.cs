@@ -27,7 +27,7 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             cmbCountry.DisplayMember = "Name";
             cmbCountry.ValueMember = "ID";
 
-            Refresh();
+            RefreshGrida();
 
             MaxID();
         }
@@ -57,15 +57,15 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             {
                 MessageBox.Show(msg);
             }
-            Refresh();
+            RefreshGrida();
             ClearData();
             MaxID();
         }
 
-        void Refresh()
+        void RefreshGrida()
         {
             DataTable tblSelect = new DataTable();
-            tblSelect = db.RunQuery("Select a.ID 'كود المؤلف', a.Name 'أسم المؤلف', a.DOB 'تاريخ الميلاد', c.Name 'الدولة' from Authors a, Countrys c where a.Country_ID = c.ID ");
+            tblSelect = db.RunQuery("Select a.ID 'رقم المؤلف', a.Name 'أسم المؤلف', a.DOB 'تاريخ الميلاد', c.Name 'الدولة' from Authors a, Countrys c where a.Country_ID = c.ID ");
             dgv.DataSource = tblSelect;
         }
 
@@ -81,7 +81,7 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             {
                 MessageBox.Show(msg);
             }
-            Refresh();
+            RefreshGrida();
             ClearData();
         }
 
@@ -97,7 +97,7 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             {
                 MessageBox.Show(msg);
             }
-            Refresh();
+            RefreshGrida();
             ClearData();
         }
 
@@ -113,7 +113,7 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             {
                 MessageBox.Show(msg);
             }
-            Refresh();
+            RefreshGrida();
             ClearData();
         }
 
@@ -136,7 +136,7 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
 
         private void ptnNew_Click(object sender, EventArgs e)
         {
-            Refresh();
+            RefreshGrida();
             ClearData();
             MaxID();
         }

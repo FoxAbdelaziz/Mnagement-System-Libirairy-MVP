@@ -21,16 +21,7 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
 
         private void FormDar_Nashr_Load(object sender, EventArgs e)
         {
-            DataTable tblmax = new DataTable();
-            tblmax = db.RunQuery("Select max (ID) From Dar_Nashr");
-            if (tblmax.Rows[0][0].ToString() != "")
-            {
-                txtDarID.Text = (Convert.ToInt16(tblmax.Rows[0][0].ToString()) + 1).ToString();
-            }
-            else
-            {
-                txtDarID.Text = "1";
-            }
+ 
         }
     }
 }
