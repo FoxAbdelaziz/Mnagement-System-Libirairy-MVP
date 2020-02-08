@@ -64,6 +64,7 @@
             this.ptnDelete.TabIndex = 0;
             this.ptnDelete.Text = "مسح";
             this.ptnDelete.UseVisualStyleBackColor = true;
+            this.ptnDelete.Click += new System.EventHandler(this.ptnDelete_Click);
             // 
             // txtDarName
             // 
@@ -109,6 +110,7 @@
             this.ptnUpdate.TabIndex = 5;
             this.ptnUpdate.Text = "حفظ";
             this.ptnUpdate.UseVisualStyleBackColor = true;
+            this.ptnUpdate.Click += new System.EventHandler(this.ptnUpdate_Click);
             // 
             // ptnAdd
             // 
@@ -119,6 +121,7 @@
             this.ptnAdd.TabIndex = 6;
             this.ptnAdd.Text = "اضافة";
             this.ptnAdd.UseVisualStyleBackColor = true;
+            this.ptnAdd.Click += new System.EventHandler(this.ptnAdd_Click);
             // 
             // groupBox1
             // 
@@ -200,6 +203,7 @@
             this.ptnDeleteAll.TabIndex = 8;
             this.ptnDeleteAll.Text = "مسح الكل";
             this.ptnDeleteAll.UseVisualStyleBackColor = true;
+            this.ptnDeleteAll.Click += new System.EventHandler(this.ptnDeleteAll_Click);
             // 
             // ptnNew
             // 
@@ -210,6 +214,7 @@
             this.ptnNew.TabIndex = 7;
             this.ptnNew.Text = "جديد";
             this.ptnNew.UseVisualStyleBackColor = true;
+            this.ptnNew.Click += new System.EventHandler(this.ptnNew_Click);
             // 
             // dgv
             // 
@@ -225,6 +230,7 @@
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(672, 231);
             this.dgv.TabIndex = 25;
+            this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             // 
             // cmbCountry
             // 

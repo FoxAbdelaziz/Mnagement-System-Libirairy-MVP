@@ -12,9 +12,30 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
 {
     public partial class FormMain : Form
     {
+        private static FormMain frm;
+        static void FormClose(object sender, FormClosedEventArgs e)
+        {
+            frm = null;
+        }
+        public static FormMain GetMainForm
+        {
+            get
+            {
+                if (frm == null)
+                {
+                    frm = new FormMain();
+                    frm.FormClosed += new FormClosedEventHandler(FormClose);
+                }
+                return frm;
+            }
+        }
         public FormMain()
         {
             InitializeComponent();
+            if (frm == null)
+            {
+                frm = this;
+            }
         }
 
         private void ToolStripMenuCategory_Click(object sender, EventArgs e)
@@ -102,6 +123,12 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
         private void MenuRestorData_Click(object sender, EventArgs e)
         {
             new FormRestorData().ShowDialog();
+
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            new FormLogin().ShowDialog();
 
         }
     }

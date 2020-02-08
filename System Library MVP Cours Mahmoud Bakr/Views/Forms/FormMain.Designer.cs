@@ -51,6 +51,9 @@
             this.بياناتالمستعرينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.استعارهكتابToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تقاريرالاستعاراتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuQuery = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuReporting = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuManager = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMain = new System.Windows.Forms.ToolStrip();
             this.toolStripCategory = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
@@ -73,6 +76,9 @@
             this.toolStripStatusLabel14 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblJob = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel12 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel8 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblServer = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel16 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblDateDay = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -84,8 +90,8 @@
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblDateEnter = new System.Windows.Forms.ToolStripStatusLabel();
-            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.timerMain = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.MenuStripMain.SuspendLayout();
             this.toolStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
@@ -99,7 +105,10 @@
             this.toolStripMenuItem2,
             this.MenuBiscData,
             this.MenuBooks,
-            this.MenuBorrowers});
+            this.MenuBorrowers,
+            this.MenuQuery,
+            this.MenuReporting,
+            this.MenuManager});
             this.MenuStripMain.Location = new System.Drawing.Point(0, 0);
             this.MenuStripMain.Name = "MenuStripMain";
             this.MenuStripMain.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -149,6 +158,7 @@
             // 
             // MenuBackUpDate
             // 
+            this.MenuBackUpDate.Enabled = false;
             this.MenuBackUpDate.Name = "MenuBackUpDate";
             this.MenuBackUpDate.Size = new System.Drawing.Size(318, 34);
             this.MenuBackUpDate.Text = "عمل نسخة أحتياطية";
@@ -156,6 +166,7 @@
             // 
             // MenuRestorData
             // 
+            this.MenuRestorData.Enabled = false;
             this.MenuRestorData.Name = "MenuRestorData";
             this.MenuRestorData.Size = new System.Drawing.Size(318, 34);
             this.MenuRestorData.Text = "أسترجاع نسخة محفوظة";
@@ -182,12 +193,14 @@
             this.ToolStripMenuPlaces,
             this.ToolStripMenuDarNashr,
             this.ToolStripMenuCountry});
+            this.MenuBiscData.Enabled = false;
             this.MenuBiscData.Name = "MenuBiscData";
             this.MenuBiscData.Size = new System.Drawing.Size(115, 33);
             this.MenuBiscData.Text = "البيانات الأساسية";
             // 
             // ToolStripMenuCategory
             // 
+            this.ToolStripMenuCategory.Enabled = false;
             this.ToolStripMenuCategory.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Category;
             this.ToolStripMenuCategory.Name = "ToolStripMenuCategory";
             this.ToolStripMenuCategory.Size = new System.Drawing.Size(164, 34);
@@ -196,6 +209,7 @@
             // 
             // ToolStripMenuAuthors
             // 
+            this.ToolStripMenuAuthors.Enabled = false;
             this.ToolStripMenuAuthors.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Authors;
             this.ToolStripMenuAuthors.Name = "ToolStripMenuAuthors";
             this.ToolStripMenuAuthors.Size = new System.Drawing.Size(164, 34);
@@ -204,6 +218,7 @@
             // 
             // ToolStripMenuPlaces
             // 
+            this.ToolStripMenuPlaces.Enabled = false;
             this.ToolStripMenuPlaces.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Places;
             this.ToolStripMenuPlaces.Name = "ToolStripMenuPlaces";
             this.ToolStripMenuPlaces.Size = new System.Drawing.Size(164, 34);
@@ -212,6 +227,7 @@
             // 
             // ToolStripMenuDarNashr
             // 
+            this.ToolStripMenuDarNashr.Enabled = false;
             this.ToolStripMenuDarNashr.Name = "ToolStripMenuDarNashr";
             this.ToolStripMenuDarNashr.Size = new System.Drawing.Size(164, 34);
             this.ToolStripMenuDarNashr.Text = "دار النشر";
@@ -219,6 +235,7 @@
             // 
             // ToolStripMenuCountry
             // 
+            this.ToolStripMenuCountry.Enabled = false;
             this.ToolStripMenuCountry.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Country;
             this.ToolStripMenuCountry.Name = "ToolStripMenuCountry";
             this.ToolStripMenuCountry.Size = new System.Drawing.Size(164, 34);
@@ -229,12 +246,14 @@
             // 
             this.MenuBooks.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.الكتبToolStripMenuItem});
+            this.MenuBooks.Enabled = false;
             this.MenuBooks.Name = "MenuBooks";
             this.MenuBooks.Size = new System.Drawing.Size(60, 33);
             this.MenuBooks.Text = "الكتب";
             // 
             // الكتبToolStripMenuItem
             // 
+            this.الكتبToolStripMenuItem.Enabled = false;
             this.الكتبToolStripMenuItem.Name = "الكتبToolStripMenuItem";
             this.الكتبToolStripMenuItem.Size = new System.Drawing.Size(150, 34);
             this.الكتبToolStripMenuItem.Text = "ادارة الكتب";
@@ -245,27 +264,52 @@
             this.بياناتالمستعرينToolStripMenuItem,
             this.استعارهكتابToolStripMenuItem,
             this.تقاريرالاستعاراتToolStripMenuItem});
+            this.MenuBorrowers.Enabled = false;
             this.MenuBorrowers.Name = "MenuBorrowers";
             this.MenuBorrowers.Size = new System.Drawing.Size(82, 33);
             this.MenuBorrowers.Text = "الأستعارات";
             // 
             // بياناتالمستعرينToolStripMenuItem
             // 
+            this.بياناتالمستعرينToolStripMenuItem.Enabled = false;
             this.بياناتالمستعرينToolStripMenuItem.Name = "بياناتالمستعرينToolStripMenuItem";
             this.بياناتالمستعرينToolStripMenuItem.Size = new System.Drawing.Size(177, 34);
             this.بياناتالمستعرينToolStripMenuItem.Text = "بيانات المستعرين";
             // 
             // استعارهكتابToolStripMenuItem
             // 
+            this.استعارهكتابToolStripMenuItem.Enabled = false;
             this.استعارهكتابToolStripMenuItem.Name = "استعارهكتابToolStripMenuItem";
             this.استعارهكتابToolStripMenuItem.Size = new System.Drawing.Size(177, 34);
             this.استعارهكتابToolStripMenuItem.Text = "استعاره كتاب";
             // 
             // تقاريرالاستعاراتToolStripMenuItem
             // 
+            this.تقاريرالاستعاراتToolStripMenuItem.Enabled = false;
             this.تقاريرالاستعاراتToolStripMenuItem.Name = "تقاريرالاستعاراتToolStripMenuItem";
             this.تقاريرالاستعاراتToolStripMenuItem.Size = new System.Drawing.Size(177, 34);
             this.تقاريرالاستعاراتToolStripMenuItem.Text = "تقارير الاستعارات";
+            // 
+            // MenuQuery
+            // 
+            this.MenuQuery.Enabled = false;
+            this.MenuQuery.Name = "MenuQuery";
+            this.MenuQuery.Size = new System.Drawing.Size(90, 33);
+            this.MenuQuery.Text = "الاستعلامات";
+            // 
+            // MenuReporting
+            // 
+            this.MenuReporting.Enabled = false;
+            this.MenuReporting.Name = "MenuReporting";
+            this.MenuReporting.Size = new System.Drawing.Size(62, 33);
+            this.MenuReporting.Text = "التقارير";
+            // 
+            // MenuManager
+            // 
+            this.MenuManager.Enabled = false;
+            this.MenuManager.Name = "MenuManager";
+            this.MenuManager.Size = new System.Drawing.Size(58, 33);
+            this.MenuManager.Text = "الادارة";
             // 
             // toolStripMain
             // 
@@ -291,6 +335,7 @@
             // toolStripCategory
             // 
             this.toolStripCategory.AutoSize = false;
+            this.toolStripCategory.Enabled = false;
             this.toolStripCategory.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Category;
             this.toolStripCategory.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripCategory.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -308,6 +353,7 @@
             // toolStripAuthors
             // 
             this.toolStripAuthors.AutoSize = false;
+            this.toolStripAuthors.Enabled = false;
             this.toolStripAuthors.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Authors;
             this.toolStripAuthors.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAuthors.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -325,6 +371,7 @@
             // toolStripPlaces
             // 
             this.toolStripPlaces.AutoSize = false;
+            this.toolStripPlaces.Enabled = false;
             this.toolStripPlaces.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Places;
             this.toolStripPlaces.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripPlaces.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -342,6 +389,7 @@
             // toolStripDarNashr
             // 
             this.toolStripDarNashr.AutoSize = false;
+            this.toolStripDarNashr.Enabled = false;
             this.toolStripDarNashr.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Category;
             this.toolStripDarNashr.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripDarNashr.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -359,6 +407,7 @@
             // toolStripCountry
             // 
             this.toolStripCountry.AutoSize = false;
+            this.toolStripCountry.Enabled = false;
             this.toolStripCountry.Image = global::System_Library_MVP_Cours_Mahmoud_Bakr.Properties.Resources.Country;
             this.toolStripCountry.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripCountry.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -382,7 +431,7 @@
             // 
             // statusStripMain
             // 
-            this.statusStripMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusStripMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel9,
             this.lblUser,
@@ -394,6 +443,9 @@
             this.toolStripStatusLabel14,
             this.lblJob,
             this.toolStripStatusLabel12,
+            this.toolStripStatusLabel8,
+            this.lblServer,
+            this.toolStripStatusLabel16,
             this.toolStripStatusLabel1,
             this.lblDateDay,
             this.toolStripStatusLabel2,
@@ -427,7 +479,7 @@
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.lblUser.BorderStyle = System.Windows.Forms.Border3DStyle.RaisedInner;
-            this.lblUser.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Font = new System.Drawing.Font("Traditional Arabic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.Color.Blue;
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(100, 29);
@@ -450,8 +502,8 @@
             this.toolStripStatusLabel15.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel15.ForeColor = System.Drawing.Color.Red;
             this.toolStripStatusLabel15.Name = "toolStripStatusLabel15";
-            this.toolStripStatusLabel15.Size = new System.Drawing.Size(63, 29);
-            this.toolStripStatusLabel15.Text = "أسم الموظف";
+            this.toolStripStatusLabel15.Size = new System.Drawing.Size(39, 29);
+            this.toolStripStatusLabel15.Text = "موظف";
             // 
             // lblEmployee
             // 
@@ -460,7 +512,7 @@
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.lblEmployee.BorderStyle = System.Windows.Forms.Border3DStyle.RaisedInner;
-            this.lblEmployee.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployee.Font = new System.Drawing.Font("Traditional Arabic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployee.ForeColor = System.Drawing.Color.Blue;
             this.lblEmployee.Name = "lblEmployee";
             this.lblEmployee.Size = new System.Drawing.Size(125, 29);
@@ -476,8 +528,8 @@
             this.toolStripStatusLabel14.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel14.ForeColor = System.Drawing.Color.Red;
             this.toolStripStatusLabel14.Name = "toolStripStatusLabel14";
-            this.toolStripStatusLabel14.Size = new System.Drawing.Size(41, 29);
-            this.toolStripStatusLabel14.Text = "الوظيفة";
+            this.toolStripStatusLabel14.Size = new System.Drawing.Size(35, 29);
+            this.toolStripStatusLabel14.Text = "وظيفة";
             // 
             // lblJob
             // 
@@ -486,7 +538,7 @@
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.lblJob.BorderStyle = System.Windows.Forms.Border3DStyle.RaisedInner;
-            this.lblJob.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJob.Font = new System.Drawing.Font("Traditional Arabic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJob.ForeColor = System.Drawing.Color.Blue;
             this.lblJob.Name = "lblJob";
             this.lblJob.Size = new System.Drawing.Size(100, 29);
@@ -497,13 +549,39 @@
             this.toolStripStatusLabel12.Size = new System.Drawing.Size(15, 29);
             this.toolStripStatusLabel12.Text = "|";
             // 
+            // toolStripStatusLabel8
+            // 
+            this.toolStripStatusLabel8.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripStatusLabel8.ForeColor = System.Drawing.Color.Red;
+            this.toolStripStatusLabel8.Name = "toolStripStatusLabel8";
+            this.toolStripStatusLabel8.Size = new System.Drawing.Size(35, 29);
+            this.toolStripStatusLabel8.Text = "سيرفر";
+            // 
+            // lblServer
+            // 
+            this.lblServer.AutoSize = false;
+            this.lblServer.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.lblServer.BorderStyle = System.Windows.Forms.Border3DStyle.RaisedInner;
+            this.lblServer.Font = new System.Drawing.Font("Traditional Arabic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblServer.ForeColor = System.Drawing.Color.Blue;
+            this.lblServer.Name = "lblServer";
+            this.lblServer.Size = new System.Drawing.Size(100, 29);
+            // 
+            // toolStripStatusLabel16
+            // 
+            this.toolStripStatusLabel16.Name = "toolStripStatusLabel16";
+            this.toolStripStatusLabel16.Size = new System.Drawing.Size(15, 29);
+            this.toolStripStatusLabel16.Text = "|";
+            // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.Red;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(55, 29);
-            this.toolStripStatusLabel1.Text = "تاريخ اليوم";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(32, 29);
+            this.toolStripStatusLabel1.Text = "تاريخ";
             // 
             // lblDateDay
             // 
@@ -512,7 +590,7 @@
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.lblDateDay.BorderStyle = System.Windows.Forms.Border3DStyle.RaisedInner;
-            this.lblDateDay.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateDay.Font = new System.Drawing.Font("Traditional Arabic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateDay.ForeColor = System.Drawing.Color.Blue;
             this.lblDateDay.Name = "lblDateDay";
             this.lblDateDay.Size = new System.Drawing.Size(100, 29);
@@ -528,8 +606,8 @@
             this.toolStripStatusLabel3.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel3.ForeColor = System.Drawing.Color.Red;
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(39, 29);
-            this.toolStripStatusLabel3.Text = "الساعة";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(32, 29);
+            this.toolStripStatusLabel3.Text = "ساعة";
             // 
             // lblTime
             // 
@@ -537,7 +615,7 @@
             this.lblTime.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
-            this.lblTime.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Font = new System.Drawing.Font("Traditional Arabic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.Blue;
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(115, 29);
@@ -553,8 +631,8 @@
             this.toolStripStatusLabel6.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel6.ForeColor = System.Drawing.Color.Red;
             this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
-            this.toolStripStatusLabel6.Size = new System.Drawing.Size(29, 29);
-            this.toolStripStatusLabel6.Text = "اليوم";
+            this.toolStripStatusLabel6.Size = new System.Drawing.Size(23, 29);
+            this.toolStripStatusLabel6.Text = "يوم";
             // 
             // lblDay
             // 
@@ -563,7 +641,7 @@
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.lblDay.BorderStyle = System.Windows.Forms.Border3DStyle.RaisedInner;
-            this.lblDay.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay.Font = new System.Drawing.Font("Traditional Arabic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDay.ForeColor = System.Drawing.Color.Blue;
             this.lblDay.Name = "lblDay";
             this.lblDay.Size = new System.Drawing.Size(75, 29);
@@ -589,10 +667,15 @@
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.lblDateEnter.BorderStyle = System.Windows.Forms.Border3DStyle.RaisedInner;
-            this.lblDateEnter.Font = new System.Drawing.Font("Traditional Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateEnter.Font = new System.Drawing.Font("Traditional Arabic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateEnter.ForeColor = System.Drawing.Color.Blue;
             this.lblDateEnter.Name = "lblDateEnter";
             this.lblDateEnter.Size = new System.Drawing.Size(160, 29);
+            // 
+            // timerMain
+            // 
+            this.timerMain.Enabled = true;
+            this.timerMain.Tick += new System.EventHandler(this.timerMain_Tick);
             // 
             // pictureBoxMain
             // 
@@ -604,11 +687,6 @@
             this.pictureBoxMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMain.TabIndex = 11;
             this.pictureBoxMain.TabStop = false;
-            // 
-            // timerMain
-            // 
-            this.timerMain.Enabled = true;
-            this.timerMain.Tick += new System.EventHandler(this.timerMain_Tick);
             // 
             // FormMain
             // 
@@ -627,6 +705,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "الشاشة الرئيسية لنظام ادارة المكاتب الكبري للنشر الكتب";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.MenuStripMain.ResumeLayout(false);
             this.MenuStripMain.PerformLayout();
             this.toolStripMain.ResumeLayout(false);
@@ -676,7 +755,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel7;
         public System.Windows.Forms.ToolStripStatusLabel lblDateEnter;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuCategory;
         public System.Windows.Forms.ToolStripButton toolStripCategory;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
         public System.Windows.Forms.ToolStripButton toolStripAuthors;
@@ -686,10 +764,6 @@
         public System.Windows.Forms.ToolStripButton toolStripExit;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         public System.Windows.Forms.ToolStripButton toolStripDarNashr;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuAuthors;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuPlaces;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuDarNashr;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuCountry;
         private System.Windows.Forms.ToolStripMenuItem MenuBooks;
         private System.Windows.Forms.ToolStripMenuItem الكتبToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuBorrowers;
@@ -698,5 +772,16 @@
         private System.Windows.Forms.ToolStripMenuItem تقاريرالاستعاراتToolStripMenuItem;
         private System.Windows.Forms.Timer timerMain;
         public System.Windows.Forms.ToolStripButton toolStripCountry;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel8;
+        public System.Windows.Forms.ToolStripStatusLabel lblServer;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel16;
+        private System.Windows.Forms.ToolStripMenuItem MenuQuery;
+        private System.Windows.Forms.ToolStripMenuItem MenuReporting;
+        private System.Windows.Forms.ToolStripMenuItem MenuManager;
+        public System.Windows.Forms.ToolStripMenuItem ToolStripMenuCategory;
+        public System.Windows.Forms.ToolStripMenuItem ToolStripMenuAuthors;
+        public System.Windows.Forms.ToolStripMenuItem ToolStripMenuPlaces;
+        public System.Windows.Forms.ToolStripMenuItem ToolStripMenuDarNashr;
+        public System.Windows.Forms.ToolStripMenuItem ToolStripMenuCountry;
     }
 }

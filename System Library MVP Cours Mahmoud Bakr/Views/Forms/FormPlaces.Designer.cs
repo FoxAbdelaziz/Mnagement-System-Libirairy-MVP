@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.ptnDelete = new System.Windows.Forms.Button();
-            this.ptnPlaceName = new System.Windows.Forms.TextBox();
+            this.txtPlaceName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPlaceID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -62,13 +62,14 @@
             this.ptnDelete.TabIndex = 0;
             this.ptnDelete.Text = "مسح";
             this.ptnDelete.UseVisualStyleBackColor = true;
+            this.ptnDelete.Click += new System.EventHandler(this.ptnDelete_Click);
             // 
-            // ptnPlaceName
+            // txtPlaceName
             // 
-            this.ptnPlaceName.Location = new System.Drawing.Point(347, 22);
-            this.ptnPlaceName.Name = "ptnPlaceName";
-            this.ptnPlaceName.Size = new System.Drawing.Size(289, 37);
-            this.ptnPlaceName.TabIndex = 13;
+            this.txtPlaceName.Location = new System.Drawing.Point(347, 22);
+            this.txtPlaceName.Name = "txtPlaceName";
+            this.txtPlaceName.Size = new System.Drawing.Size(289, 37);
+            this.txtPlaceName.TabIndex = 13;
             // 
             // label2
             // 
@@ -107,6 +108,7 @@
             this.ptnUpdate.TabIndex = 5;
             this.ptnUpdate.Text = "حفظ";
             this.ptnUpdate.UseVisualStyleBackColor = true;
+            this.ptnUpdate.Click += new System.EventHandler(this.ptnUpdate_Click);
             // 
             // ptnAdd
             // 
@@ -117,6 +119,7 @@
             this.ptnAdd.TabIndex = 6;
             this.ptnAdd.Text = "اضافة";
             this.ptnAdd.UseVisualStyleBackColor = true;
+            this.ptnAdd.Click += new System.EventHandler(this.ptnAdd_Click);
             // 
             // groupBox1
             // 
@@ -198,6 +201,7 @@
             this.ptnDeleteAll.TabIndex = 8;
             this.ptnDeleteAll.Text = "مسح الكل";
             this.ptnDeleteAll.UseVisualStyleBackColor = true;
+            this.ptnDeleteAll.Click += new System.EventHandler(this.ptnDeleteAll_Click);
             // 
             // ptnNew
             // 
@@ -208,6 +212,7 @@
             this.ptnNew.TabIndex = 7;
             this.ptnNew.Text = "جديد";
             this.ptnNew.UseVisualStyleBackColor = true;
+            this.ptnNew.Click += new System.EventHandler(this.ptnNew_Click);
             // 
             // dgv
             // 
@@ -223,13 +228,14 @@
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(672, 231);
             this.dgv.TabIndex = 25;
+            this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             // 
             // FormPlaces
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(700, 505);
-            this.Controls.Add(this.ptnPlaceName);
+            this.Controls.Add(this.txtPlaceName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPlaceID);
             this.Controls.Add(this.label1);
@@ -260,7 +266,7 @@
         #endregion
 
         private System.Windows.Forms.Button ptnDelete;
-        private System.Windows.Forms.TextBox ptnPlaceName;
+        private System.Windows.Forms.TextBox txtPlaceName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPlaceID;
         private System.Windows.Forms.Label label1;
