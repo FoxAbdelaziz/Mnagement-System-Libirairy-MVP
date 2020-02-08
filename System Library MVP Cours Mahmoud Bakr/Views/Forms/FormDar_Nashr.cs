@@ -18,6 +18,7 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
         {
             InitializeComponent();
         }
+        BindingManagerBase bmb;
 
         private void FormDar_Nashr_Load(object sender, EventArgs e)
         {
@@ -49,6 +50,9 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             DataTable tblSelect = new DataTable();
             tblSelect = db.RunQuery("Select d.ID 'رقم دار النشر', d.Name 'دار النشر', c.Name 'الدولة' From Dar_Nashr d , Countrys c Where d.Country_ID = c.ID");
             dgv.DataSource = tblSelect;
+
+            bmb = this.BindingContext[tblSelect];
+            lblPostion.Text = (bmb.Position + 1) + "/" + bmb.Count;
         }
         void ClearData()
         {
@@ -60,6 +64,12 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             RefreshGrida();
             ClearData();
             MaxID();
+            ptnAdd.Enabled = true;
+            ptnNew.Enabled = false;
+
+            ptnUpdate.Enabled = false;
+            ptnDelete.Enabled = false;
+            ptnDeleteAll.Enabled = false;
         }
 
         private void ptnAdd_Click(object sender, EventArgs e)
@@ -134,7 +144,38 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
                 txtDarID.Text = dgv.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txtDarName.Text = dgv.Rows[e.RowIndex].Cells[1].Value.ToString();
                 cmbCountry.Text = dgv.Rows[e.RowIndex].Cells[2].Value.ToString();
+
+                ptnUpdate.Enabled = true;
+                ptnDelete.Enabled = true;
+                ptnDeleteAll.Enabled = true;
+
+                ptnAdd.Enabled = false;
+                ptnNew.Enabled = true;
             }
+        }
+
+        private void ptnFirst_Click(object sender, EventArgs e)
+        {
+            bmb.Position = 0;
+            lblPostion.Text = (bmb.Position + 1) + "/" + bmb.Count;
+        }
+
+        private void ptnPrevious_Click(object sender, EventArgs e)
+        {
+            bmb.Position -= 1;
+            lblPostion.Text = (bmb.Position + 1) + "/" + bmb.Count;
+        }
+
+        private void ptnNext_Click(object sender, EventArgs e)
+        {
+            bmb.Position += 1;
+            lblPostion.Text = (bmb.Position + 1) + "/" + bmb.Count;
+        }
+
+        private void ptnLast_Click(object sender, EventArgs e)
+        {
+            bmb.Position = bmb.Count;
+            lblPostion.Text = (bmb.Position + 1) + "/" + bmb.Count;
         }
     }
 }

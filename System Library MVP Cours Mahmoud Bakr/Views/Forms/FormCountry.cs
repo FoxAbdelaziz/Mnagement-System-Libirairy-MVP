@@ -17,6 +17,7 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             InitializeComponent();
         }
         Logic.Services.ClassDB db = new Logic.Services.ClassDB();
+        BindingManagerBase bmb;
 
         private void FormCountry_Load(object sender, EventArgs e)
         {
@@ -24,14 +25,18 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             MaxID();
             RefreshGrida();
         }
-
         private void ptnNew_Click(object sender, EventArgs e)
         {
             RefreshGrida();
             ClearData();
             MaxID();
-        }
+            ptnAdd.Enabled = true;
+            ptnNew.Enabled = false;
 
+            ptnUpdate.Enabled = false;
+            ptnDelete.Enabled = false;
+            ptnDeleteAll.Enabled = false;
+        }
         void ClearData()
         {
             txtCountryID.Clear();
@@ -56,8 +61,10 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             DataTable tblSelect = new DataTable();
             tblSelect = db.RunQuery("Select ID 'رقم الدولة', Code 'كود الدولة', Name 'الدولة' From Countrys");
             dgv.DataSource = tblSelect;
-        }
 
+            bmb = this.BindingContext[tblSelect];
+            lblPostion.Text = (bmb.Position + 1) + "/" + bmb.Count;
+        }
         private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -65,9 +72,15 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
                 txtCountryID.Text = dgv.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txtCountryCode.Text = dgv.Rows[e.RowIndex].Cells[1].Value.ToString();
                 txtCountry.Text = dgv.Rows[e.RowIndex].Cells[2].Value.ToString();
+
+                ptnUpdate.Enabled = true;
+                ptnDelete.Enabled = true;
+                ptnDeleteAll.Enabled = true;
+
+                ptnAdd.Enabled = false;
+                ptnNew.Enabled = true;
             }
         }
-
         private void ptnAdd_Click(object sender, EventArgs e)
         {
             string msg;
@@ -84,7 +97,6 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             ClearData();
             MaxID();
         }
-
         private void ptnUpdate_Click(object sender, EventArgs e)
         {
             string msg;
@@ -100,7 +112,6 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             RefreshGrida();
             ClearData();
         }
-
         private void ptnDelete_Click(object sender, EventArgs e)
         {
             string msg;
@@ -116,7 +127,6 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             RefreshGrida();
             ClearData();
         }
-
         private void ptnDeleteAll_Click(object sender, EventArgs e)
         {
             string msg;
@@ -131,6 +141,30 @@ namespace System_Library_MVP_Cours_Mahmoud_Bakr.Views.Forms
             }
             RefreshGrida();
             ClearData();
+        }
+
+        private void ptnFirst_Click(object sender, EventArgs e)
+        {
+            bmb.Position = 0;
+            lblPostion.Text = (bmb.Position + 1) + "/" + bmb.Count;
+        }
+
+        private void ptnPrevious_Click(object sender, EventArgs e)
+        {
+            bmb.Position -= 1;
+            lblPostion.Text = (bmb.Position + 1) + "/" + bmb.Count;
+        }
+
+        private void ptnNext_Click(object sender, EventArgs e)
+        {
+            bmb.Position += 1;
+            lblPostion.Text = (bmb.Position + 1) + "/" + bmb.Count;
+        }
+
+        private void ptnLast_Click(object sender, EventArgs e)
+        {
+            bmb.Position = bmb.Count;
+            lblPostion.Text = (bmb.Position + 1) + "/" + bmb.Count;
         }
     }
 }

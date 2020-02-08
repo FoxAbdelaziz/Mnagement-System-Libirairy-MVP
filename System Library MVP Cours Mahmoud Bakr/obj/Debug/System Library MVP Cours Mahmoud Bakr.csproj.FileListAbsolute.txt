@@ -16,4 +16,3 @@ C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cour
 C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.csproj.GenerateResource.Cache
 C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.exe
 C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.pdb
-C:\Users\Abdelaziz\documents\visual studio 2015\Projects\System Library MVP Cours Mahmoud Bakr\System Library MVP Cours Mahmoud Bakr\obj\Debug\System Library MVP Cours Mahmoud Bakr.csprojResolveAssemblyReference.cache
